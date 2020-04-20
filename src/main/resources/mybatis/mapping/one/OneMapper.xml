@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.one.OneMapper">
+    <select id="userInfoList" resultType="com.example.demo.vo.UserInfo">
+        SELECT id,user_id userID,ip,device_id deviceId,add_time addTime FROM user_info LIMIT 11
+    </select>
+</mapper>
